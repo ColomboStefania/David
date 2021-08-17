@@ -14,7 +14,6 @@ function saySomething(parameter) {
     return whatHappened;
   }
   console.log(lasVegas())
-  xcode-select --install
   function calculateBMI(weight, height) {
     const BMI = weight / (height * height);
     // return the value
@@ -23,3 +22,22 @@ function saySomething(parameter) {
   
   // capture the output by assigning it to a variable
   const BMI = calculateBMI(82, 1.79); // resolves to 25.592 etc..
+
+  //Different way of writing a function
+  const allCapsArrowFunction = (string) => {
+    return string.toUpperCase()
+}
+
+console.log(allCapsArrowFunction('hello, world with arrows!'))
+
+// Methods => contains multiple function inside one object
+const speeches = {
+  greeting: function () {
+    console.log ('hello')
+  },
+  farewell: () => console.log('goodbye')
+}
+
+speeches.greeting()
+speeches.farewell()
+
