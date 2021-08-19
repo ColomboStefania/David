@@ -41,3 +41,30 @@ const speeches = {
 speeches.greeting()
 speeches.farewell()
 
+//Array
+const mix = [1, 'string', true]
+const second = mix[1]
+
+console.log(second)
+
+//Map
+function callback () {
+  console.log('test')
+}
+
+const elements = [1, 2, 3]
+
+elements.map(callback)
+
+//Map with Returning function 
+function david () {
+  return 'david'
+}
+
+const elements2 = [1, 4, 3, 2]
+
+const newArray = elements2.map(david)
+
+console.log(newArray)
+
+console.log(elements2.map(david))
